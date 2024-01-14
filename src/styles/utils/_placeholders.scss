@@ -1,0 +1,22 @@
+%button{
+    padding: 10px;
+    font-weight: bold;
+    background: blue;
+    border-radius: 6px;
+}
+
+%space-between {
+    justify-content: space-between;
+}
+
+%flex-end {
+    justify-content: flex-end;
+}
+
+%flex-column-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+

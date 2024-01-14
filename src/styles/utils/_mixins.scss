@@ -1,0 +1,56 @@
+//Responsive only-screens(mobile, tablet, desktop)
+@mixin mobile {
+    @media (min-width: map-get($breakpoints,"mobile")) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (min-width: map-get($breakpoints,"tablet")) {
+      @content;
+    }
+  }
+  @mixin desktop {
+    @media (min-width: map-get($breakpoints,"desktop")) {
+      @content;
+    }
+  }
+  
+  @mixin desktopL {
+    @media (min-width: map-get($breakpoints,"desktopL")) {
+      @content;
+    }
+  }
+  
+  @mixin breakpoint($screen: 0) {
+    @media (min-width: $screen) {
+      @content;
+    }
+  }
+
+// gestion des titres
+  @mixin title-style {
+    margin: 0 0 20px 0;
+    font-family :"Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  //les angles arrindis dans tous les navigateurs
+  @mixin rounded($radius){
+    -webkit-border-radius:$radius;
+    -modz-border-radius:$radius;
+    border-radius: $radius;
+  }
+
+  @mixin flex-row-align($align-items: center) {
+    display: flex;
+    flex-direction: row;
+    align-items: $align-items;
+  }
+  @mixin flex-column-align($align-items: center) {
+    display: flex;
+    flex-direction: column;
+    align-items: $align-items;
+  }
