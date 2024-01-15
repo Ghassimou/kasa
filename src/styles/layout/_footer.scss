@@ -1,0 +1,36 @@
+.footer-logo {
+    @media screen and (max-width: $width-desktop) {
+        width: 100%;
+        height: 209px;
+        padding: 66px 464px 29px 463px;
+        gap: 28.556px;
+        background: $backgroud-footer-color;
+    }
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  .logo {
+    width: 122px;
+    height: 39.444px;
+    flex-shrink: 0;
+  }
+}
+
+.txt-copyright {
+    width: 513px;
+    height: 46px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 34.224px */
+    //mixins
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 0;
+  }

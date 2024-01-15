@@ -3,7 +3,7 @@
   @include flex-row-align;
 
   // Media querie desktop
-  @media screen and (max-width: $width-large) {
+  @media screen and (max-width: $width-desktop) {
     padding-top: 45px;
     padding-right: 100px;
     padding-bottom: 50px;

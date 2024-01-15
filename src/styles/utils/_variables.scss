@@ -1,20 +1,12 @@
 //Color main page
-$primary-color:#FF6060;
-$secondary-color: #F6F6F6;
-$tertiary-color: #FFFFFF;
-$backgroud-footer-color : #000;
-$backgroud-cards-color : #FFF;
-$host-color:#C4C4C4;
-$background-banner: lightgray 50% ;
+$primary-color: #ff6060;
+$secondary-color: #f6f6f6;
+$tertiary-color: #ffffff;
+$backgroud-footer-color: #000;
+$backgroud-cards-color: #fff;
+$host-color: #c4c4c4;
+$background-banner: lightgray 50%;
 
-//Breackpoint for mixins only screen
-$breakpoints: (
-  "mobile": 0,
-  "tablet": 768px,
-  "desktop": 1024px,
-  "desktopL": 1440px,
-);
-
-$width-small: 768px;
-$width-medium: 1024px;
-$width-large: 1440px;
+$width-mobile: 768px;
+$width-tablete: 1024px;
+$width-desktop: 1440px;

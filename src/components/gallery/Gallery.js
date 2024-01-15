@@ -1,15 +1,15 @@
 import React from 'react';
-import Cards from '../cards/Card';
+import Thumb from '../thumb/Thumb';
+import {Link} from 'react-router-dom';
 
 const Gallery = () => {
     return (
         <section className='home-gallery'>
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
+            <Link to="/thumb"><Thumb /></Link>
+            <Link to="/thumb"><Thumb /></Link>
+            <Link to="/thumb"><Thumb /></Link>
+            <Link to="/thumb"><Thumb /></Link>
+            <Link to="/thumb"><Thumb /></Link>
         </section>
     );
 };

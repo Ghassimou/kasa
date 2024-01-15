@@ -1,8 +1,8 @@
 import React from 'react';
-import VectorK from '../../assets/img-logo/img-footer/Vector.png';
-import Vector from '../../assets/img-logo/img-footer/Group.png';
-import VectorS from '../../assets/img-logo/img-footer/Vector-2.png';
-import VectorA from '../../assets/img-logo/img-footer/Vector-3.png';
+import VectorK from '../../assets/images/img-footer/Vector.png';
+import Vector from '../../assets/images/img-footer/Group.png';
+import VectorS from '../../assets/images/img-footer/Vector-2.png';
+import VectorA from '../../assets/images/img-footer/Vector-3.png';
 
 const Footer = () => {
     return (
