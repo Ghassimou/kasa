@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../../components/logo/Logo";
 import Header from "../../components/header/Header";
 import Error404 from "../../components/Error404";
 
