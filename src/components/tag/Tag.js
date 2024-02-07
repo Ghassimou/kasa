@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Tag = () => {
+const Tag = ({nom}) => {
     return (
             <button className='txt-tag'>
-                Cozy
+            {nom}
             </button> 
     );
 };

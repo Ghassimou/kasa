@@ -1,15 +1,15 @@
 import React from 'react';
-import VectorK from '../../assets/images/img-footer/Vector.png';
-import Vector from '../../assets/images/img-footer/Group.png';
-import VectorS from '../../assets/images/img-footer/Vector-2.png';
-import VectorA from '../../assets/images/img-footer/Vector-3.png';
+import VectorK from '../../assets/images/logo/footer-logo_K.png';
+import VectorHome from '../../assets/images/logo/footer-logo_^.png';
+import VectorS from '../../assets/images/logo/footer-logo_s.png';
+import VectorA from '../../assets/images/logo/footer-logo_a.png';
 
 const Footer = () => {
     return (
         <div className='footer-logo'>
             <div className='logo'>
             <img src={VectorK} alt="Le logo de kasa " />
-            <img src={Vector} alt="Le logo de kasa " />
+            <img src={VectorHome} alt="Le logo de kasa " />
             <img src={VectorS} alt="Le logo de kasa " />
             <img src={VectorA} alt="Le logo de kasa " />
             </div>

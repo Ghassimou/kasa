@@ -1,20 +1,38 @@
 // Font Montserrat
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 //Font Mouse Memoirs
-  @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
 
-body{
-    max-width: 1440px;
-    font-family: "Montserrat";
+body {
+  max-width: 1440px;
 }
-//main 
-main{
-
-    padding-top: 0;
-    padding-right: 100px;
-       padding-bottom: 43px;
-        padding-left: 100px;
-    
+// espace
+.home-page {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 50px;
 }
 
+//espace
+.about {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 38px;
+}
+
+.error-page{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+//main
+main {
+  padding-right: 100px;
+  padding-left: 100px;
+}
