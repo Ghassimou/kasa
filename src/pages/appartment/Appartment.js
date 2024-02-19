@@ -8,14 +8,17 @@ import { useParams } from 'react-router-dom';
 const Appartment = () => {
     const location = useParams()
    const appartment = appartments.find(e => e.id === location.id)
-   console.log(appartment)
+   console.log("console log appartment",appartment)
 
     return (
 
         <div className='appartment'>
             <Header />
             <main>
-                <Slideshow pictures={appartment.pictures}/> 
+                <section className='carrousel'>
+                <Slideshow appartment={appartment}/>
+                </section>
+                 
             </main>
             <Footer />
         </div>

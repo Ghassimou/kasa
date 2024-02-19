@@ -17,6 +17,10 @@
     width: 100%;
   }
 
+  .is-visible{
+    display: block;
+  }
+
   .accordionTitle {
     display: flex;
     align-items: center;
@@ -36,9 +40,9 @@
   }
   .accordionText {
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    display: none;
+    // align-items: center;
+    // justify-content: flex-end;
 
     // padding: 0px 0px 176px 20px;
     padding-top: 20px;

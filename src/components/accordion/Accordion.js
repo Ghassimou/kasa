@@ -9,7 +9,7 @@ const [isOpen, setIsOpen] = useState (false)
         {title}
         <img src={arrowBackup} onClick={()=>setIsOpen(!isOpen)} alt="" className="arrowBackup" />
       </h2>
-      <p className="accordionText">{isOpen ? description : ''}</p>
+      <p className={isOpen === true ? "accordionText is-visible" : " "}>{description}</p>
     </article>
   );
 };

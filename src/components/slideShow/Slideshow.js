@@ -3,16 +3,13 @@ import React, { useState } from "react";
 import arrowRight from "../../assets/images/carrousel/arrow-right.png";
 import arrowLeft from "../../assets/images/carrousel/arrow-left.png";
 
-const Slideshow = ({ pictures }) => {
- // etat du composant
+const Slideshow = ({ appartment }) => {
+  // etat du composant
+  console.log("console log slideshow", appartment);
   const [slide, setSlide] = useState(0); // initialisation du compteur a zéro
+  const nbSlides = appartment.pictures?.length; // Longeur du tableau
 
-
-  console.log(pictures, "toto");
-  if(!pictures) return 
- 
-
-  const nbSlides = pictures?.length;
+  if (!appartment.pictures) return;
 
   // comportement
 
@@ -27,27 +24,55 @@ const Slideshow = ({ pictures }) => {
 
   //affichage
   return (
-    <section className="carrousel">
-      {pictures.map((picture, index) => {
-        return <img src={picture} alt="Photo appartement" key={index} 
-        className={slide === index ? "slide" : "slide slide-hiden"}/>;
+    <article className="card">
+      {appartment.pictures.map((picture, index) => {
+        return (
+          <img
+            src={picture}
+            alt="Photo appartement"
+            key={index}
+            className={slide === index ? "card-img" : "slide slide-hiden"}
+          />
+        );
       })}
 
       <img
         src={arrowRight}
         alt="Fléche de droite"
-        className="arrowRight"
+        className=" arrow arrow-forword"
         onClick={nextImage}
         style={{ backgroundColor: "black" }}
       />
       <img
         src={arrowLeft}
         alt="Fléche de gauche"
-        className="arrowLeft"
+        className="card-arrow arrow-back"
         onClick={prevImage}
         style={{ backgroundColor: "black" }}
       />
-    </section>
+      <div className="content-card">
+        <div className="content-title-location">
+          <h2 className="title">{appartment.title}</h2>
+          <span className="location">{appartment.location}</span>
+        </div>
+        <div className="content-host">
+          <span className="owner-name">{appartment.host.name}</span>
+          <img
+            src={appartment.host.picture}
+            alt="Photo du propriètaire"
+            className="owner-img"
+          />
+        </div>
+        <div className="content-tag-description">
+            <span className="txt-tag">{appartment.tags}</span>
+          <div className="description">{appartment.description}</div>
+        </div>
+        <div className="content-rating-equipment">
+        <span className="rate">{appartment.rating}</span>
+          <div className="equipment">{appartment.equipments}</div>
+        </div>
+      </div>
+    </article>
   );
 };
 
